@@ -67,14 +67,56 @@
 // console.log(GetUniqueArray);
 
 // 4-masala
-function reverseWords(str) {
-    let words = str.split(" ");
+// function reverseWords(str) {
+//     let words = str.split(" ");
 
-    let reversedWords = words.map(word => {
-        return word.split("").reverse().join("");
-    });
-    return reversedWords.join(" ");
-}
+//     let reversedWords = words.map(word => {
+//         return word.split("").reverse().join("");
+//     });
+//     return reversedWords.join(" ");
+// }
 
-let input = "Salom";
-console.log(reverseWords(input)); 
+// let input = "Salom";
+// console.log(reverseWords(input));
+
+// balance hisoblash
+
+// let people = [
+//     {
+//       name: "Courtney",
+//       age: 43,
+//       balance: 3400
+//     },
+//     {
+//       name: "Regina",
+//       age: 53,
+//       balance: 4000
+//     },
+//     {
+//       name: "Jay",
+//       age: 28,
+//       balance: 3000
+//     }
+//   ];
+
+//   function calculateTotalBalance(people) {
+//     let totalBalance = 0;
+//     for (let person of people) {
+//       totalBalance += person.balance;
+//     }
+//     return totalBalance;
+//   }
+
+//   let total = calculateTotalBalance(people);
+//   console.log("Jami balans:" +total);        =====>internetdan ko'rib ishladim
+
+// 6. Satrning oldi va orqasidan boshqa bir satrni qo'shib qaytaruvchi
+//  funksiya hosil qiling. Funksiya ko'rinishi: getNewStr(str1, str2).
+
+function getNewStr(str1, str2) {
+    return str2 + str1 + str2;
+  }
+  let str1 = "salom";
+  let str2 = "/";
+  let result = getNewStr(str1, str2);
+  console.log(result);
